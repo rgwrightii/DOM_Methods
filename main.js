@@ -5,12 +5,13 @@ const button = document.createElement("BUTTON")
 const main = document.createElement("main")
 const section = document.createElement("section")
 const body = document.querySelector("body")
+const removeMain = document.querySelector("main")
 
 document.body.appendChild(button)
-button.append("remove")
+button.append("remove main")
 button.addEventListener("click", function(){
     console.log("button")
-    main.remove(button)
+    main.remove("BUTTON")
 })
 
 let inputBox = document.createElement("input")
